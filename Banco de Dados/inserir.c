@@ -12,7 +12,7 @@ void do_exit(PGconn *conn) {
 
 int main() {
     
-    PGconn *conn = PQconnectdb("user=usuario password=senha dbname=nometabela");
+    PGconn *conn = PQconnectdb("user=usuario password=senha dbname=nomebanco");
 
     if (PQstatus(conn) == CONNECTION_BAD) {
         
